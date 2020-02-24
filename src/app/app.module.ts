@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms"; // <-- NgModel lives here
+
 
 // Http client 
 
@@ -16,6 +18,7 @@ import { AgGridModule } from 'ag-grid-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     AgGridModule.withComponents([])
   ],
